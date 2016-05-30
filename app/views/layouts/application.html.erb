@@ -58,8 +58,15 @@
     }
     
     .layout-8263544593450811 {
-      min-height: 141px;
       background: rgb(60, 60, 183);
+    }
+    
+    .text-7249796083676205 {
+      min-height: 92px;
+      color: rgb(253, 253, 253);
+      font-weight: normal;
+      font-style: normal;
+      text-decoration: none;
     }
     
     .layout-6621947221933704 {
@@ -67,9 +74,7 @@
     }
     
     .content-34651574409343744 {
-      min-height: 289.5px;
-      background: #ADA2A2;
-      is-yield: true;
+      min-height: 290px;
     }
     
     .layout-9251825821388486 {
@@ -95,8 +100,18 @@
         }
         
         .layout-8263544593450811 {
+          padding-bottom: 23px;
           margin-left: 49px;
           width: 237px;
+        }
+        
+        .b-0-0-0-0-0-0-0 {
+          margin-top: 26px;
+        }
+        
+        .text-7249796083676205 {
+          margin-left: 31px;
+          width: 159px;
         }
         
         .b-0-0-1 {
@@ -104,17 +119,17 @@
         }
         
         .layout-6621947221933704 {
-          padding-bottom: 43.5px;
+          padding-bottom: 41px;
           margin-left: 86px;
           width: 378px;
         }
         
         .b-0-0-1-0-0 {
-          margin-top: 23px;
+          margin-top: 25px;
         }
         
         .content-34651574409343744 {
-          margin-left: 27px;
+          margin-left: 28px;
           width: 320px;
         }
         
@@ -146,8 +161,18 @@
         }
         
         .layout-8263544593450811 {
+          padding-bottom: 15px;
           margin-left: 64px;
           width: 307px;
+        }
+        
+        .b-0-0-0-0-0-0-0 {
+          margin-top: 34px;
+        }
+        
+        .text-7249796083676205 {
+          margin-left: 41px;
+          width: 207px;
         }
         
         .b-0-0-1 {
@@ -155,18 +180,18 @@
         }
         
         .layout-6621947221933704 {
-          padding-bottom: 35.5px;
+          padding-bottom: 33px;
           margin-left: 112px;
           width: 490px;
         }
         
         .b-0-0-1-0-0 {
-          margin-top: 31px;
+          margin-top: 33px;
         }
         
         .content-34651574409343744 {
-          margin-left: 36px;
-          width: 415.5px;
+          margin-left: 37px;
+          width: 416px;
         }
         
         .layout-9251825821388486 {
@@ -197,8 +222,18 @@
         }
         
         .layout-8263544593450811 {
+          padding-bottom: 9px;
           margin-left: 77px;
           width: 370px;
+        }
+        
+        .b-0-0-0-0-0-0-0 {
+          margin-top: 40px;
+        }
+        
+        .text-7249796083676205 {
+          margin-left: 49px;
+          width: 249px;
         }
         
         .b-0-0-1 {
@@ -206,17 +241,17 @@
         }
         
         .layout-6621947221933704 {
-          padding-bottom: 29.5px;
+          padding-bottom: 27px;
           margin-left: 135px;
           width: 591px;
         }
         
         .b-0-0-1-0-0 {
-          margin-top: 37px;
+          margin-top: 39px;
         }
         
         .content-34651574409343744 {
-          margin-left: 43px;
+          margin-left: 44px;
           width: 501px;
         }
         
@@ -270,7 +305,11 @@
                     <div class="section b-0-0-0-0-0">
                         <div class="content">
                             <div class="column layout-8263544593450811">
-                                
+                                <div class="section b-0-0-0-0-0-0-0">
+                                    <div class="column text-7249796083676205">
+                                        <div>Welcome</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -280,7 +319,9 @@
                 <div class="content">
                     <div class="column layout-6621947221933704">
                         <div class="section b-0-0-1-0-0">
-                            <%= yield %>
+                            <div class="column content-34651574409343744">
+                                <%= yield %>
+                            </div>
                         </div>
                     </div>
                     <div class="column layout-9251825821388486">
