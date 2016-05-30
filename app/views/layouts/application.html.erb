@@ -1,14 +1,294 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Blog</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+    <%= csrf_meta_tags %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => false %>
+    <meta name="viewport" content="user-scalable=no,width=device-width" />
+    <style>
+        * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        margin: 0;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+    
+    .full-width {
+        width: 100% !important;
+    }
+    
+    button, input, select, textarea {
+      font-size: inherit;
+      font-family: inherit;
+      line-height: inherit;
+    }
+    
+    @media (min-width: 750px) {
+        .column {
+            float: left;
+        }
+    
+        .section:after {
+            content:"";
+            display:table;
+            clear:both;
+        }
+    
+        .content {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    
+    .b-0 {
+      margin-top: 0px;
+    }
+    
+    .layout-9227099660948033 {
+      background: #E4E4E4;
+    }
+    
+    .b-0-0-0 {
+      margin-top: 0px;
+    }
+    
+    .layout-13059367412809286 {
+      background: rgb(190, 190, 249);
+    }
+    
+    .layout-8263544593450811 {
+      min-height: 141px;
+      background: rgb(60, 60, 183);
+    }
+    
+    .layout-6621947221933704 {
+      background: rgb(251, 115, 115);
+    }
+    
+    .content-34651574409343744 {
+      min-height: 289.5px;
+      background: #ADA2A2;
+      is-yield: true;
+    }
+    
+    .layout-9251825821388486 {
+      min-height: 356px;
+      background: rgb(63, 63, 202);
+    }
+    
+    @media (min-width: 750px) and (max-width: 970px) {
+        .layout-9227099660948033 {
+          padding-bottom: 55px;
+          margin-left: NaNpx;
+          width: 750px;
+        }
+        
+        .layout-13059367412809286 {
+          padding-bottom: 23px;
+          margin-left: NaNpx;
+          width: 750px;
+        }
+        
+        .b-0-0-0-0-0 {
+          margin-top: 13px;
+        }
+        
+        .layout-8263544593450811 {
+          margin-left: 49px;
+          width: 237px;
+        }
+        
+        .b-0-0-1 {
+          margin-top: 28px;
+        }
+        
+        .layout-6621947221933704 {
+          padding-bottom: 43.5px;
+          margin-left: 86px;
+          width: 378px;
+        }
+        
+        .b-0-0-1-0-0 {
+          margin-top: 23px;
+        }
+        
+        .content-34651574409343744 {
+          margin-left: 27px;
+          width: 320px;
+        }
+        
+        .layout-9251825821388486 {
+          margin-left: 22px;
+          width: 235px;
+        }
+        
+        .content {
+          width: 750px;
+        }
+    }
+    
+    @media (min-width: 970px) and (max-width: 1170px) {
+        .layout-9227099660948033 {
+          padding-bottom: 46px;
+          margin-left: 0px;
+          width: 970px;
+        }
+        
+        .layout-13059367412809286 {
+          padding-bottom: 18px;
+          margin-left: 0px;
+          width: 970px;
+        }
+        
+        .b-0-0-0-0-0 {
+          margin-top: 18px;
+        }
+        
+        .layout-8263544593450811 {
+          margin-left: 64px;
+          width: 307px;
+        }
+        
+        .b-0-0-1 {
+          margin-top: 37px;
+        }
+        
+        .layout-6621947221933704 {
+          padding-bottom: 35.5px;
+          margin-left: 112px;
+          width: 490px;
+        }
+        
+        .b-0-0-1-0-0 {
+          margin-top: 31px;
+        }
+        
+        .content-34651574409343744 {
+          margin-left: 36px;
+          width: 415.5px;
+        }
+        
+        .layout-9251825821388486 {
+          margin-left: 29px;
+          width: 304px;
+        }
+        
+        .content {
+          width: 970px;
+        }
+    }
+    
+    @media (min-width: 1170px) {
+        .layout-9227099660948033 {
+          padding-bottom: 39px;
+          margin-left: NaNpx;
+          width: 1170px;
+        }
+        
+        .layout-13059367412809286 {
+          padding-bottom: 15px;
+          margin-left: NaNpx;
+          width: 1170px;
+        }
+        
+        .b-0-0-0-0-0 {
+          margin-top: 21px;
+        }
+        
+        .layout-8263544593450811 {
+          margin-left: 77px;
+          width: 370px;
+        }
+        
+        .b-0-0-1 {
+          margin-top: 44px;
+        }
+        
+        .layout-6621947221933704 {
+          padding-bottom: 29.5px;
+          margin-left: 135px;
+          width: 591px;
+        }
+        
+        .b-0-0-1-0-0 {
+          margin-top: 37px;
+        }
+        
+        .content-34651574409343744 {
+          margin-left: 43px;
+          width: 501px;
+        }
+        
+        .layout-9251825821388486 {
+          margin-left: 34px;
+          width: 366px;
+        }
+        
+        .content {
+          width: 1170px;
+        }
+    }
+    
+    @media (max-width: 750px) {
+        .column {
+            float: none;
+        }
+    
+        * {
+            margin: 0 !important;
+            width: auto !important;
+            max-width: 100%;
+        }
+    
+        img {
+            max-width: 52%;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            display: block;
+            min-height: 0 !important;
+        }
+    
+        img:not([src]) {
+            width: 52% !important; /* make sure empty images still show up */
+        }
+    
+        iframe {
+            width: 100% !important;
+        }
+    }
+    </style>
+    <script>
+    
+    </script>
 </head>
-<body>
-
-<%= yield %>
-
+<body class="full-width">
+    <div class="section full-width b-0">
+        <div class="column full-width layout-9227099660948033">
+            <div class="section full-width b-0-0-0">
+                <div class="column full-width layout-13059367412809286">
+                    <div class="section b-0-0-0-0-0">
+                        <div class="content">
+                            <div class="column layout-8263544593450811">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section b-0-0-1">
+                <div class="content">
+                    <div class="column layout-6621947221933704">
+                        <div class="section b-0-0-1-0-0">
+                            <%= yield %>
+                        </div>
+                    </div>
+                    <div class="column layout-9251825821388486">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
